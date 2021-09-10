@@ -18,7 +18,7 @@ $(document).on('click','#submit',function(){
     else{
       // replace <username> with your pythonanywhere username
       // also make sure to make changes in the url as per your flask API argument names
-      var requestURL = "http://frans.pythonanywhere.com/api?query="+feature1;
+      var requestURL = "https://frans.pythonanywhere.com/api?query="+feature1;
       console.log(requestURL); // log the requestURL for troubleshooting
       $.getJSON(requestURL, function(data) {
         console.log(data); // log the data for troubleshooting
